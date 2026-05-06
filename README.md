@@ -7,6 +7,7 @@ RevMatrix transforms real-time Forza Horizon telemetry into a compact racing-sty
 # TOC
 
 - [FEATURES](#features)
+- [HARDWARES USED](#Hardware-Used)
 
 # Features
 
