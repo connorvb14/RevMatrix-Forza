@@ -17,6 +17,7 @@ This is my first GitHub Repository and First Project to be Uploaded in GitHub. I
 - [BACKSTORY (JUST HOW I DONE IT, DOESNT MATTER XD](#backstory)
 - [POSSIBLE UPDATES](#Possible-Updates)
 - [COMPLETE SHOWCASE](#Complete-Showcase)
+- [BUG REPORTS](#bugs-and-reports)
 
 # Features
 
@@ -190,3 +191,7 @@ https://github.com/user-attachments/assets/d5dda74a-4b8d-410d-ae94-f711f6d90f3f
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg" width="20"/>
   @sh._.ihab._
 </a>
+
+# BUGS AND REPORTS
+
+Always welcome to contribute and report bugs and possible updates
