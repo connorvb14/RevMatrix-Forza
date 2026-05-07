@@ -50,6 +50,45 @@ RevMatrix transforms real-time Forza Horizon telemetry into a compact racing-sty
 
 Make sure both strip and matrix grounds are common
 
+# BUILDING PROCEDURE
+
+- Make the connections as shown in [SCHEMATICS](#SCHEMATICS)
+- Connect the Board with pc using a data cable
+- Open Arduino IDE and install libraries and boards. [Refer how to install esp32 boards](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
+- Download the Code and libraries.
+- In IDE Make sure Correct board is chosen, Most of the ESP32 Boards should work on "ESP32 DEV MODULE"
+
+   <img width="247" height="133" alt="image" src="https://github.com/user-attachments/assets/1cc906c2-66d0-4f6b-bdb8-387d19a54061" />
+
+- In the Code, Replace "YOUR SSID" With ur WiFi SSID and "YOUR PASSWORD" with your WiFi Password
+
+   <img width="361" height="47" alt="image" src="https://github.com/user-attachments/assets/4f0df9c3-65b1-4a1a-99d1-aa9c9f9d89d3" />
+   
+- Compile and Upload the Code, The Compiling will take some time, Just wait for it, or restart if too much time is taken.
+- Open Serial Monitor and Change Baud Rate to 11500 baud
+
+  <img width="275" height="44" alt="image" src="https://github.com/user-attachments/assets/092a792e-c878-42c5-b9d4-f0188dc0bbcb" />
+  
+- Unplug and Plug ESP32 if nothing is showing or it showing gibberish.
+- If u can see "Connecting to Wifi", Then ur Board is trying to connect to wifi and its a good sign.
+- After it succesfully connected to wifi, Serial Monitor will show the IP Address and wait for recieving telematry from the game
+
+   <img width="267" height="100" alt="image" src="https://github.com/user-attachments/assets/39b9eea9-0c4a-4905-8cde-b23fc62d9fb1" />
+   
+- Congrats, ur Hardware is officially completed.
+- Now Open the game and head into settings.
+- Go to HUD and Gameplay, Scroll down, U can see these settings there
+ 
+  <img width="1224" height="768" alt="Screenshot 2026-05-07 053237" src="https://github.com/user-attachments/assets/9649d587-70fe-4fc9-95c2-a3773b812b62" />
+
+- Turn on the "DATA OUT"
+- Enter the IP Address shown in the Serial Monitor on "DATA OUT IP ADDRESS"
+- Enter "8000" on "DATA OUT IP PORT". this is the udp port id we've mentioned in the code
+- Save the settings
+- Congrats You have made the RevMatrix-Forza
+
+
+
 # How It Works
 
 RevMatrix uses the telemetry output system built into Forza Horizon to receive live vehicle data over WiFi.
