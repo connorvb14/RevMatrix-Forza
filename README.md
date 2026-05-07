@@ -50,6 +50,10 @@ This is my first GitHub Repository and First Project to be Uploaded in GitHub. I
 - GPIO14 → MAX7219 CLK
 - GPIO4  → WS2812B DATA
 
+- 3V - MAX7219 VCC
+- 5V - WS2812B +5V
+- GND - COMMON GND ON BOTH
+
 Make sure both strip and matrix grounds are common
 
 # BUILDING PROCEDURE
